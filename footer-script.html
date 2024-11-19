@@ -3,7 +3,7 @@
     const slider = document.querySelector(".x-slider");
     const imageWrapperList = document.querySelectorAll(
       ".slide-card__image-wrapper"
-    );
+    ); // BEFORE AND AFTER CLASS
 
     slider.addEventListener("x_slider:init", () => {
       const instance = xSlider.Instances[slider.getAttribute("data-x-id")];
@@ -14,7 +14,6 @@
       });
 
       function onLeave() {
-        p;
         instance.Components.Drag.disable(false);
       }
 
